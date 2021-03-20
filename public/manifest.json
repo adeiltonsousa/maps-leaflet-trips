@@ -1,0 +1,21 @@
+{
+  "name": "Clima Hoje",
+  "short_name": "ClimaHoje",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#06092B",
+  "description": "Aplicação com dados do clima no Brasil e informações relacionadas a meteorologia.",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#06092B"
+}

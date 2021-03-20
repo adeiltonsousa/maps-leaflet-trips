@@ -1,17 +1,17 @@
-import Head from 'next/head'
+import dynamic from 'next/dynamic'
+import { InfoOutline } from '@styled-icons/evaicons-outline'
 
-type Props = {
-  title: string
-}
+import LinkWrapper from 'components/LinkWrapper'
 
-export default function Home({ title = 'React Avançado' }: Props) {
+const Map = dynamic(() => import('components/Map'), { ssr: false })
+
+export default function Home() {
   return (
-    <div>
-      <Head>
-        <title style={{ color: '#87777' }}>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <p>Testeee</p>
-    </div>
+    <>
+      <LinkWrapper href="/about">
+        <InfoOutline size={32} aria-label="About" />
+      </LinkWrapper>
+      <Map />
+    </>
   )
 }
