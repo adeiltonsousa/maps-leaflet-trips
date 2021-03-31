@@ -20,6 +20,7 @@ export const GET_PAGE_BY_SLUG = gql`
       slug
       body {
         html
+        text
       }
     }
   }
